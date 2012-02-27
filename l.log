@@ -1,0 +1,398 @@
+Starting target: total 68
+-rw-r--r-- 1 reich384 reich384    17 2012-02-26 22:22 l.log
+-rw-r--r-- 1 reich384 reich384    91 2012-02-01 00:02 Makefile
+-rwxr-xr-x 1 reich384 reich384 26141 2012-02-26 22:21 maum
+-rw-r--r-- 1 reich384 reich384  6554 2012-02-26 22:21 maum.c
+-rw-r--r-- 1 reich384 reich384   461 2012-02-07 22:38 Maumfile
+-rw-r--r-- 1 reich384 reich384   316 2011-02-08 19:34 maum.h
+-rw-r--r-- 1 reich384 reich384  1232 2012-02-07 22:40 README
+-rw-r--r-- 1 reich384 reich384  4699 2012-02-07 22:44 util.c
+-rw-r--r-- 1 reich384 reich384  1048 2012-02-07 22:44 util.h
+Starting target: CSci 4061
+Spring 2012 HW1 Sample Solution
+Prepared by Jonathan Hsiao
+
+For HW2, you can build on your HW1 submission, or you may also use this sample
+HW1 solution to build on. In either case, replace this README with your own.
+
+In this sample solution, util.c and util.h contain the following functions:
+
++ Two linked list types, target_t and linked_list. The only major difference is
+  that target_t has additional space for two additional pointers to linked
+  lists, for the list of dependencies and the list of commands for each target.
++ Linked list functions to add and search, one for each of the two types.
+  Unlike the linked list in recitation, the functions take a pointer to the
+  first element of the list, and new additions are appended to the end of the
+  list, in order to make sure entries are retrieved in the same order they were
+  added (FIFO). This is useful for things like keeping the list of commands in
+  the order they were listed in the Maumfile. In addition, the search function
+  returns the node found (or NULL if not found), and the add function returns a
+  pointer to the list.
++ The makeargv and freemakeargv functions from recitation 2 (originally from
+  p.37 of the textbook).
+Starting target: test1total 68
+-rw-r--r-- 1 reich384 reich384  1847 2012-02-26 22:22 l.log
+-rw-r--r-- 1 reich384 reich384    91 2012-02-01 00:02 Makefile
+-rwxr-xr-x 1 reich384 reich384 26201 2012-02-26 22:22 maum
+-rw-r--r-- 1 reich384 reich384  6552 2012-02-26 22:22 maum.c
+-rw-r--r-- 1 reich384 reich384   461 2012-02-07 22:38 Maumfile
+-rw-r--r-- 1 reich384 reich384   316 2011-02-08 19:34 maum.h
+-rw-r--r-- 1 reich384 reich384  1232 2012-02-07 22:40 README
+-rw-r--r-- 1 reich384 reich384  4699 2012-02-07 22:44 util.c
+-rw-r--r-- 1 reich384 reich384  1048 2012-02-07 22:44 util.h
+Starting target: test2CSci 4061
+Spring 2012 HW1 Sample Solution
+Prepared by Jonathan Hsiao
+
+For HW2, you can build on your HW1 submission, or you may also use this sample
+HW1 solution to build on. In either case, replace this README with your own.
+
+In this sample solution, util.c and util.h contain the following functions:
+
++ Two linked list types, target_t and linked_list. The only major difference is
+  that target_t has additional space for two additional pointers to linked
+  lists, for the list of dependencies and the list of commands for each target.
++ Linked list functions to add and search, one for each of the two types.
+  Unlike the linked list in recitation, the functions take a pointer to the
+  first element of the list, and new additions are appended to the end of the
+  list, in order to make sure entries are retrieved in the same order they were
+  added (FIFO). This is useful for things like keeping the list of commands in
+  the order they were listed in the Maumfile. In addition, the search function
+  returns the node found (or NULL if not found), and the add function returns a
+  pointer to the list.
++ The makeargv and freemakeargv functions from recitation 2 (originally from
+  p.37 of the textbook).
+>>Starting target: test1
+
+>>>>Running command: ls -l
+
+total 68
+-rw-r--r-- 1 reich384 reich384  3714 2012-02-26 22:23 l.log
+-rw-r--r-- 1 reich384 reich384    91 2012-02-01 00:02 Makefile
+-rwxr-xr-x 1 reich384 reich384 26209 2012-02-26 22:23 maum
+-rw-r--r-- 1 reich384 reich384  6550 2012-02-26 22:22 maum.c
+-rw-r--r-- 1 reich384 reich384   461 2012-02-07 22:38 Maumfile
+-rw-r--r-- 1 reich384 reich384   316 2011-02-08 19:34 maum.h
+-rw-r--r-- 1 reich384 reich384  1232 2012-02-07 22:40 README
+-rw-r--r-- 1 reich384 reich384  4699 2012-02-07 22:44 util.c
+-rw-r--r-- 1 reich384 reich384  1048 2012-02-07 22:44 util.h
+>>Starting target: test2
+
+>>>>Running command: cat README
+
+CSci 4061
+Spring 2012 HW1 Sample Solution
+Prepared by Jonathan Hsiao
+
+For HW2, you can build on your HW1 submission, or you may also use this sample
+HW1 solution to build on. In either case, replace this README with your own.
+
+In this sample solution, util.c and util.h contain the following functions:
+
++ Two linked list types, target_t and linked_list. The only major difference is
+  that target_t has additional space for two additional pointers to linked
+  lists, for the list of dependencies and the list of commands for each target.
++ Linked list functions to add and search, one for each of the two types.
+  Unlike the linked list in recitation, the functions take a pointer to the
+  first element of the list, and new additions are appended to the end of the
+  list, in order to make sure entries are retrieved in the same order they were
+  added (FIFO). This is useful for things like keeping the list of commands in
+  the order they were listed in the Maumfile. In addition, the search function
+  returns the node found (or NULL if not found), and the add function returns a
+  pointer to the list.
++ The makeargv and freemakeargv functions from recitation 2 (originally from
+  p.37 of the textbook).
+
+>>Starting target: test1
+
+>>>>Running command: ls -l
+
+total 72
+-rw-r--r-- 1 reich384 reich384  5619 2012-02-26 22:38 l.log
+-rw-r--r-- 1 reich384 reich384    91 2012-02-01 00:02 Makefile
+-rwxr-xr-x 1 reich384 reich384 26209 2012-02-26 22:38 maum
+-rw-r--r-- 1 reich384 reich384  6584 2012-02-26 22:38 maum.c
+-rw-r--r-- 1 reich384 reich384   461 2012-02-07 22:38 Maumfile
+-rw-r--r-- 1 reich384 reich384   316 2011-02-08 19:34 maum.h
+-rw-r--r-- 1 reich384 reich384  1232 2012-02-07 22:40 README
+-rw-r--r-- 1 reich384 reich384  4699 2012-02-07 22:44 util.c
+-rw-r--r-- 1 reich384 reich384  1048 2012-02-07 22:44 util.h
+
+>>Starting target: test2
+
+>>>>Running command: cat README
+
+CSci 4061
+Spring 2012 HW1 Sample Solution
+Prepared by Jonathan Hsiao
+
+For HW2, you can build on your HW1 submission, or you may also use this sample
+HW1 solution to build on. In either case, replace this README with your own.
+
+In this sample solution, util.c and util.h contain the following functions:
+
++ Two linked list types, target_t and linked_list. The only major difference is
+  that target_t has additional space for two additional pointers to linked
+  lists, for the list of dependencies and the list of commands for each target.
++ Linked list functions to add and search, one for each of the two types.
+  Unlike the linked list in recitation, the functions take a pointer to the
+  first element of the list, and new additions are appended to the end of the
+  list, in order to make sure entries are retrieved in the same order they were
+  added (FIFO). This is useful for things like keeping the list of commands in
+  the order they were listed in the Maumfile. In addition, the search function
+  returns the node found (or NULL if not found), and the add function returns a
+  pointer to the list.
++ The makeargv and freemakeargv functions from recitation 2 (originally from
+  p.37 of the textbook).
+
+>>Starting target: test1
+
+>>>>Running command: ls -l
+
+total 72
+-rw-r--r-- 1 reich384 reich384  7525 2012-02-26 22:38 l.log
+-rw-r--r-- 1 reich384 reich384    91 2012-02-01 00:02 Makefile
+-rwxr-xr-x 1 reich384 reich384 26209 2012-02-26 22:38 maum
+-rw-r--r-- 1 reich384 reich384  6583 2012-02-26 22:38 maum.c
+-rw-r--r-- 1 reich384 reich384   461 2012-02-07 22:38 Maumfile
+-rw-r--r-- 1 reich384 reich384   316 2011-02-08 19:34 maum.h
+-rw-r--r-- 1 reich384 reich384  1232 2012-02-07 22:40 README
+-rw-r--r-- 1 reich384 reich384  4699 2012-02-07 22:44 util.c
+-rw-r--r-- 1 reich384 reich384  1048 2012-02-07 22:44 util.h
+
+>>Starting target: test2
+
+>>>>Running command: cat README
+
+CSci 4061
+Spring 2012 HW1 Sample Solution
+Prepared by Jonathan Hsiao
+
+For HW2, you can build on your HW1 submission, or you may also use this sample
+HW1 solution to build on. In either case, replace this README with your own.
+
+In this sample solution, util.c and util.h contain the following functions:
+
++ Two linked list types, target_t and linked_list. The only major difference is
+  that target_t has additional space for two additional pointers to linked
+  lists, for the list of dependencies and the list of commands for each target.
++ Linked list functions to add and search, one for each of the two types.
+  Unlike the linked list in recitation, the functions take a pointer to the
+  first element of the list, and new additions are appended to the end of the
+  list, in order to make sure entries are retrieved in the same order they were
+  added (FIFO). This is useful for things like keeping the list of commands in
+  the order they were listed in the Maumfile. In addition, the search function
+  returns the node found (or NULL if not found), and the add function returns a
+  pointer to the list.
++ The makeargv and freemakeargv functions from recitation 2 (originally from
+  p.37 of the textbook).
+
+>>Starting target: test1
+
+>>>>Running command: ls -l
+
+total 76
+-rw-r--r-- 1 reich384 reich384  9431 2012-02-26 22:39 l.log
+-rw-r--r-- 1 reich384 reich384    91 2012-02-01 00:02 Makefile
+-rwxr-xr-x 1 reich384 reich384 26209 2012-02-26 22:39 maum
+-rw-r--r-- 1 reich384 reich384  6584 2012-02-26 22:39 maum.c
+-rw-r--r-- 1 reich384 reich384   461 2012-02-07 22:38 Maumfile
+-rw-r--r-- 1 reich384 reich384   316 2011-02-08 19:34 maum.h
+-rw-r--r-- 1 reich384 reich384  1232 2012-02-07 22:40 README
+-rw-r--r-- 1 reich384 reich384  4699 2012-02-07 22:44 util.c
+-rw-r--r-- 1 reich384 reich384  1048 2012-02-07 22:44 util.h
+
+>>Starting target: test2
+
+>>>>Running command: cat README
+
+CSci 4061
+Spring 2012 HW1 Sample Solution
+Prepared by Jonathan Hsiao
+
+For HW2, you can build on your HW1 submission, or you may also use this sample
+HW1 solution to build on. In either case, replace this README with your own.
+
+In this sample solution, util.c and util.h contain the following functions:
+
++ Two linked list types, target_t and linked_list. The only major difference is
+  that target_t has additional space for two additional pointers to linked
+  lists, for the list of dependencies and the list of commands for each target.
++ Linked list functions to add and search, one for each of the two types.
+  Unlike the linked list in recitation, the functions take a pointer to the
+  first element of the list, and new additions are appended to the end of the
+  list, in order to make sure entries are retrieved in the same order they were
+  added (FIFO). This is useful for things like keeping the list of commands in
+  the order they were listed in the Maumfile. In addition, the search function
+  returns the node found (or NULL if not found), and the add function returns a
+  pointer to the list.
++ The makeargv and freemakeargv functions from recitation 2 (originally from
+  p.37 of the textbook).
+
+>>Starting target: test1
+
+>>>>Running command: ls -l
+
+total 76
+-rw-r--r-- 1 reich384 reich384 11337 2012-02-26 22:39 l.log
+-rw-r--r-- 1 reich384 reich384    91 2012-02-01 00:02 Makefile
+-rwxr-xr-x 1 reich384 reich384 26209 2012-02-26 22:39 maum
+-rw-r--r-- 1 reich384 reich384  6588 2012-02-26 22:39 maum.c
+-rw-r--r-- 1 reich384 reich384   461 2012-02-07 22:38 Maumfile
+-rw-r--r-- 1 reich384 reich384   316 2011-02-08 19:34 maum.h
+-rw-r--r-- 1 reich384 reich384  1232 2012-02-07 22:40 README
+-rw-r--r-- 1 reich384 reich384  4699 2012-02-07 22:44 util.c
+-rw-r--r-- 1 reich384 reich384  1048 2012-02-07 22:44 util.h
+
+>>Starting target: test2
+
+>>>>Running command: cat README
+
+CSci 4061
+Spring 2012 HW1 Sample Solution
+Prepared by Jonathan Hsiao
+
+For HW2, you can build on your HW1 submission, or you may also use this sample
+HW1 solution to build on. In either case, replace this README with your own.
+
+In this sample solution, util.c and util.h contain the following functions:
+
++ Two linked list types, target_t and linked_list. The only major difference is
+  that target_t has additional space for two additional pointers to linked
+  lists, for the list of dependencies and the list of commands for each target.
++ Linked list functions to add and search, one for each of the two types.
+  Unlike the linked list in recitation, the functions take a pointer to the
+  first element of the list, and new additions are appended to the end of the
+  list, in order to make sure entries are retrieved in the same order they were
+  added (FIFO). This is useful for things like keeping the list of commands in
+  the order they were listed in the Maumfile. In addition, the search function
+  returns the node found (or NULL if not found), and the add function returns a
+  pointer to the list.
++ The makeargv and freemakeargv functions from recitation 2 (originally from
+  p.37 of the textbook).
+
+>>Starting target: test1
+
+>>>>Running command: ls -l
+
+total 80
+-rw-r--r-- 1 reich384 reich384 13243 2012-02-26 22:40 l.log
+-rw-r--r-- 1 reich384 reich384    91 2012-02-01 00:02 Makefile
+-rwxr-xr-x 1 reich384 reich384 26209 2012-02-26 22:40 maum
+-rw-r--r-- 1 reich384 reich384  6600 2012-02-26 22:40 maum.c
+-rw-r--r-- 1 reich384 reich384   461 2012-02-07 22:38 Maumfile
+-rw-r--r-- 1 reich384 reich384   316 2011-02-08 19:34 maum.h
+-rw-r--r-- 1 reich384 reich384  1232 2012-02-07 22:40 README
+-rw-r--r-- 1 reich384 reich384  4699 2012-02-07 22:44 util.c
+-rw-r--r-- 1 reich384 reich384  1048 2012-02-07 22:44 util.h
+
+>>Starting target: test2
+
+>>>>Running command: cat README
+
+CSci 4061
+Spring 2012 HW1 Sample Solution
+Prepared by Jonathan Hsiao
+
+For HW2, you can build on your HW1 submission, or you may also use this sample
+HW1 solution to build on. In either case, replace this README with your own.
+
+In this sample solution, util.c and util.h contain the following functions:
+
++ Two linked list types, target_t and linked_list. The only major difference is
+  that target_t has additional space for two additional pointers to linked
+  lists, for the list of dependencies and the list of commands for each target.
++ Linked list functions to add and search, one for each of the two types.
+  Unlike the linked list in recitation, the functions take a pointer to the
+  first element of the list, and new additions are appended to the end of the
+  list, in order to make sure entries are retrieved in the same order they were
+  added (FIFO). This is useful for things like keeping the list of commands in
+  the order they were listed in the Maumfile. In addition, the search function
+  returns the node found (or NULL if not found), and the add function returns a
+  pointer to the list.
++ The makeargv and freemakeargv functions from recitation 2 (originally from
+  p.37 of the textbook).
+
+>>Starting target: test1
+
+>>>>Running command: ls -l
+
+total 80
+-rw-r--r-- 1 reich384 reich384 15149 2012-02-26 22:40 l.log
+-rw-r--r-- 1 reich384 reich384    91 2012-02-01 00:02 Makefile
+-rwxr-xr-x 1 reich384 reich384 26209 2012-02-26 22:40 maum
+-rw-r--r-- 1 reich384 reich384  6598 2012-02-26 22:40 maum.c
+-rw-r--r-- 1 reich384 reich384   461 2012-02-07 22:38 Maumfile
+-rw-r--r-- 1 reich384 reich384   316 2011-02-08 19:34 maum.h
+-rw-r--r-- 1 reich384 reich384  1232 2012-02-07 22:40 README
+-rw-r--r-- 1 reich384 reich384  4699 2012-02-07 22:44 util.c
+-rw-r--r-- 1 reich384 reich384  1048 2012-02-07 22:44 util.h
+
+>>Starting target: test2
+
+>>>>Running command: cat README
+
+CSci 4061
+Spring 2012 HW1 Sample Solution
+Prepared by Jonathan Hsiao
+
+For HW2, you can build on your HW1 submission, or you may also use this sample
+HW1 solution to build on. In either case, replace this README with your own.
+
+In this sample solution, util.c and util.h contain the following functions:
+
++ Two linked list types, target_t and linked_list. The only major difference is
+  that target_t has additional space for two additional pointers to linked
+  lists, for the list of dependencies and the list of commands for each target.
++ Linked list functions to add and search, one for each of the two types.
+  Unlike the linked list in recitation, the functions take a pointer to the
+  first element of the list, and new additions are appended to the end of the
+  list, in order to make sure entries are retrieved in the same order they were
+  added (FIFO). This is useful for things like keeping the list of commands in
+  the order they were listed in the Maumfile. In addition, the search function
+  returns the node found (or NULL if not found), and the add function returns a
+  pointer to the list.
++ The makeargv and freemakeargv functions from recitation 2 (originally from
+  p.37 of the textbook).
+
+>>Starting target: test1
+
+>>>>Running command: ls -l
+
+total 84
+-rw-r--r-- 1 reich384 reich384 17055 2012-02-26 22:40 l.log
+-rw-r--r-- 1 reich384 reich384    91 2012-02-01 00:02 Makefile
+-rwxr-xr-x 1 reich384 reich384 26209 2012-02-26 22:40 maum
+-rw-r--r-- 1 reich384 reich384  6600 2012-02-26 22:40 maum.c
+-rw-r--r-- 1 reich384 reich384   461 2012-02-07 22:38 Maumfile
+-rw-r--r-- 1 reich384 reich384   316 2011-02-08 19:34 maum.h
+-rw-r--r-- 1 reich384 reich384  1232 2012-02-07 22:40 README
+-rw-r--r-- 1 reich384 reich384  4699 2012-02-07 22:44 util.c
+-rw-r--r-- 1 reich384 reich384  1048 2012-02-07 22:44 util.h
+
+>>Starting target: test2
+
+>>>>Running command: cat README
+
+CSci 4061
+Spring 2012 HW1 Sample Solution
+Prepared by Jonathan Hsiao
+
+For HW2, you can build on your HW1 submission, or you may also use this sample
+HW1 solution to build on. In either case, replace this README with your own.
+
+In this sample solution, util.c and util.h contain the following functions:
+
++ Two linked list types, target_t and linked_list. The only major difference is
+  that target_t has additional space for two additional pointers to linked
+  lists, for the list of dependencies and the list of commands for each target.
++ Linked list functions to add and search, one for each of the two types.
+  Unlike the linked list in recitation, the functions take a pointer to the
+  first element of the list, and new additions are appended to the end of the
+  list, in order to make sure entries are retrieved in the same order they were
+  added (FIFO). This is useful for things like keeping the list of commands in
+  the order they were listed in the Maumfile. In addition, the search function
+  returns the node found (or NULL if not found), and the add function returns a
+  pointer to the list.
++ The makeargv and freemakeargv functions from recitation 2 (originally from
+  p.37 of the textbook).

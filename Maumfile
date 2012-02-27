@@ -1,0 +1,21 @@
+# this is the Dimefile to give an example of what you should be able
+# to handle
+
+# simple case
+test1: 
+	ls -l
+end
+
+# when test2 is the target, test1 should still be called
+# bogus is not a valid target, so it should be ignored
+test2: test1 bogus 
+	cat README
+end
+
+# test running multiple commands
+test3:
+	sort Dimefile -o /tmp/foobar1, sort -r Dimefile -o /tmp/foobar2
+	sort Dimefile -o /tmp/foobar1
+	sort -r Dimefile -o /tmp/foobar2
+	tail -5 /tmp/foobar1
+end
