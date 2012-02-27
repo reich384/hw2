@@ -1,0 +1,22 @@
+CSci 4061
+Spring 2012 HW1 Sample Solution
+Prepared by Jonathan Hsiao
+
+For HW2, you can build on your HW1 submission, or you may also use this sample
+HW1 solution to build on. In either case, replace this README with your own.
+
+In this sample solution, util.c and util.h contain the following functions:
+
++ Two linked list types, target_t and linked_list. The only major difference is
+  that target_t has additional space for two additional pointers to linked
+  lists, for the list of dependencies and the list of commands for each target.
++ Linked list functions to add and search, one for each of the two types.
+  Unlike the linked list in recitation, the functions take a pointer to the
+  first element of the list, and new additions are appended to the end of the
+  list, in order to make sure entries are retrieved in the same order they were
+  added (FIFO). This is useful for things like keeping the list of commands in
+  the order they were listed in the Maumfile. In addition, the search function
+  returns the node found (or NULL if not found), and the add function returns a
+  pointer to the list.
++ The makeargv and freemakeargv functions from recitation 2 (originally from
+  p.37 of the textbook).
